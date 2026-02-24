@@ -543,6 +543,8 @@ pre code {
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
+    display:flex;
+    justify-content: center;
     margin-right: auto;
     margin-left: auto;
 }
