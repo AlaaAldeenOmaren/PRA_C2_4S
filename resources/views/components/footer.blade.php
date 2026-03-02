@@ -1,10 +1,15 @@
 
-<footer>
-	© {{ __('misc.copyright') }}
+<footer class="bg-dark text-light mt-auto">
+    <div class="container py-3">
+        <div class="text-center small">
+            © {{ __('misc.copyright', ['year' => date('Y')]) }}
+        </div>
+    </div>
 </footer>
 
 
-<!-- analytics code -->              
+
+<!-- analytics code -->
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
@@ -19,10 +24,10 @@
 </script>
 <!-- Einde analytics code -->
 
-<script language="Javascript" type="text/javascript"> 
- 
- if (top.location!= self.location) { 
+<script language="Javascript" type="text/javascript">
+
+ if (top.location!= self.location) {
   top.location = self.location.href
- } 
- 
+ }
+
 </script>
