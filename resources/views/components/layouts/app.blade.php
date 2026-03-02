@@ -24,8 +24,20 @@
                     @if (isset($_GET['q']))
                         <x-search_results />
                     @else
+                        @if (isset($title))
+                            <h1>{{ $title }}</h1>
+                        @endif
+
+                        @if (isset($introduction_text))
+                            <div class="mb-3">
+                                {{ $introduction_text }}
+                            </div>
+                        @endif
+
                         {{ $slot }}
+
                     @endif
+
 
                     <ul class="breadcrumb">
                         <li>
