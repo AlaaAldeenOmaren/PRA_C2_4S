@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Manual extends Model
 {
     use HasFactory;
+    protected $fillable = ['visited'];
 
     // Returns the filesize in a human readable format
     public function getFilesizeHumanReadableAttribute(){
