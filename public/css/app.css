@@ -10039,3 +10039,7 @@ a.text-dark:hover, a.text-dark:focus {
     color: #ccc;
     content: "/ ";
 }
+
+footer.bg-dark{display:flex;flex-direction:column}
+footer .container{display:flex;flex-direction:column}
+footer .container>.border-top{margin-top:auto;width:100%;text-align:center}

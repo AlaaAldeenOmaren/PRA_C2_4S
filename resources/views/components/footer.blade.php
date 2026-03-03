@@ -4,7 +4,7 @@
     <div class="row">
       <div class="col-md-4 mb-3">
         <h5 class="mb-2">Over ons</h5>
-        <p class="small mb-0">Wij leveren duidelijke handleidingen en ondersteuning voor onze producten. Gericht op kwaliteit en gebruiksgemak.</p>
+        <p class="small mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque esse, reprehenderit illum ad culpa nobis rerum animi earum.</p>
       </div>
       <div class="col-md-4 mb-3">
         <h5 class="mb-2">Contact</h5>
