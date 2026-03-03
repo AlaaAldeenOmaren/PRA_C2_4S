@@ -2,11 +2,15 @@
     <div class="container">
         <div class="navbar-header mr-auto">
             <a class="navbar-brand" href="/" title="{{ __('misc.home_alt') }}">{{ __('misc.homepage_title') }}</a>
+            <a class="nav-link contact-btn {{ request()->routeIs('contact') ? 'active' : '' }}"
+                href="{{ route('contact') }}">
+                Contact
+            </a>
         </div>
         <div id="navbar" class="form-inline">
 
             <script>
-                (function () {
+                (function() {
                     var cx = 'partner-pub-6236044096491918:8149652050';
                     var gcse = document.createElement('script');
                     gcse.type = 'text/javascript';
