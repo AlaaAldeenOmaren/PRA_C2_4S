@@ -18,7 +18,7 @@
         @foreach ($manuals as $manual)
             <div class="col-6 col-md-4 col-lg-3 mb-2"
                 @else
-                    <a class="d-block p-2 border rounded text-decoration-none" href="{{ route('manual.show', ['brand_id' => $brand->id, 'brand_slug' => $brand->getNameUrlEncodedAttribute(), 'manual_id' => $manual->id]) }}"  target="_blank" alt="{{ $manual->name }}" title="{{ $manual->name }}">{{ $manual->name }}</a>
+                     <a class="d-block p-2 border rounded text-decoration-none" href="{{ route('manual.show', ['brand_id' => $brand->id, 'brand_slug' => $brand->getNameUrlEncodedAttribute(), 'manual_id' => $manual->id]) }}"  target="_blank" alt="{{ $manual->name }}" title="{{ $manual->name }}">{{ $manual->name }}</a>
                 @endif
             </div>
         @endforeach
