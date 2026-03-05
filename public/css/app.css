@@ -10044,6 +10044,29 @@ footer.bg-dark{display:flex;flex-direction:column}
 footer .container{display:flex;flex-direction:column}
 footer .container>.border-top{margin-top:auto;width:100%;text-align:center}
 
+/* ===== Contact Button Style ===== */
+
+.contact-btn {
+    background-color: #17a2b8;
+    color: #ffffff !important;
+    padding: 6px 14px;
+    border-radius: 20px;
+    margin-left: 10px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.contact-btn:hover {
+    background-color: #138496;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    color: #ffffff !important;
+}
+
+.contact-btn.active {
+    background-color: #0d6efd;
+}
+
 html{scroll-behavior:smooth}
 nav.az-nav{text-align:center;margin-bottom:1rem}
 nav.az-nav a{display:inline-block;margin:0 .25rem;color:inherit;text-decoration:none}
