@@ -15,8 +15,12 @@
             {{ __('misc.all_brands') }}
         </x-slot:title>
     </h1>
-
-
+    <p>Ga naar letter:</p>
+    <nav class="az-nav">
+        @foreach(range('A','Z') as $letter)
+            <a href="#{{ $letter }}">{{ $letter }}</a>
+        @endforeach
+    </nav>
     <?php
     $size = count($brands);
     $columns = 3;
@@ -33,16 +37,17 @@
                     <ul>
                         @foreach($chunk as $brand)
 
-                            <?php
-                            $current_first_letter = strtoupper(substr($brand->name, 0, 1));
+                            @php
+                                $current_first_letter = strtoupper(substr($brand->name, 0, 1));
+                            @endphp
 
-                            if (!isset($header_first_letter) || (isset($header_first_letter) && $current_first_letter != $header_first_letter)) {
-                                echo '</ul>
-						<h2>' . $current_first_letter . '</h2>
-						<ul>';
-                            }
-                            $header_first_letter = $current_first_letter
-                            ?>
+                            @if(!isset($header_first_letter) || $current_first_letter != $header_first_letter)
+                                </ul>
+                                <h2 id="{{ $current_first_letter }}">{{ $current_first_letter }}</h2>
+                                <ul>
+                            @endif
+
+                            @php $header_first_letter = $current_first_letter; @endphp
 
                             <li>
                                 <a href="{{ route('brand.show', ['brand_id' => $brand->id, 'brand_slug' => $brand->getNameUrlEncodedAttribute()]) }}" alt="Manuals for '{{$brand->name}}'" title="Manuals for '{{$brand->name}}'">{{ $brand->name }}</a>
