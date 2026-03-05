@@ -1089,10 +1089,21 @@ pre code {
     .col-md-4 {
         flex: 0 0 33.3333333333%;
         max-width: 33.3333333333%;
-        background-color:#686868;
+        background-color:#e9ecef;
     }
     .col-md-4 a{
-        color: #292363;
+        color: #a6887e;
+    }
+    .col-md-4 a:visited{
+        color: #8e5948;
+    }
+
+    .col-md-4 a:hover{
+        color: #3b2822;
+    }
+
+     .col-md-4 a:active{
+        color: #b04b2c;
     }
     .col-md-5 {
         flex: 0 0 41.6666666667%;
