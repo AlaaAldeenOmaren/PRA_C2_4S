@@ -29,7 +29,7 @@
                         @endif
 
                         @if (isset($introduction_text))
-                            <div class="mb-3">
+                            <div class="mb-3 me4-block">
                                 {{ $introduction_text }}
                             </div>
                         @endif

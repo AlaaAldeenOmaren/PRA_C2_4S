@@ -1,12 +1,12 @@
 <x-layouts.app>
 
     <x-slot:introduction_text>
-        <p><img src="img/afbl_logo.png" align="right" width="100" height="100">{{ __('introduction_texts.homepage_line_1') }}</p>
+        <p><img src="img/afbl_logo.png" align="right" width="100" height="100"><span class="me4">{{ __('introduction_texts.homepage_line_1') }}</span></p>
 
-        <p class="text-muted small">Welkom, {{ $name }} ({{ $age }})</p>
+        <p class="text-muted small"><span class="me4">Welkom, {{ $name }} ({{ $age }})</span></p>
 
-        <p>{{ __('introduction_texts.homepage_line_2') }}</p>
-        <p>{{ __('introduction_texts.homepage_line_3') }}</p>
+        <p><span class="me4">{{ __('introduction_texts.homepage_line_2') }}</span></p>
+        <p><span class="me4">{{ __('introduction_texts.homepage_line_3') }}</span></p>
     </x-slot:introduction_text>
 
 
@@ -18,7 +18,7 @@
     <p>Ga naar letter:</p>
     <nav class="az-nav">
         @foreach(range('A','Z') as $letter)
-            <a href="#{{ $letter }}">{{ $letter }}</a>
+            <a href="#{{ $letter }}">{{ $letter }}</a>  
         @endforeach
     </nav>
     <?php
@@ -28,7 +28,6 @@
     ?>
 
     <div class="container">
-        <!-- Example row of columns -->
         <div class="row">
 
             @foreach($brands->chunk($chunk_size) as $chunk)
@@ -38,7 +37,7 @@
                         @foreach($chunk as $brand)
 
                             @php
-                                $current_first_letter = strtoupper(substr($brand->name, 0, 1));
+                                $current_first_letter = strtoupper(substr($brand->name, 0, 1)); 
                             @endphp
 
                             @if(!isset($header_first_letter) || $current_first_letter != $header_first_letter)
