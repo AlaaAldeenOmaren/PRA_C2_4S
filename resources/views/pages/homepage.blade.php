@@ -18,7 +18,7 @@
     <p>Ga naar letter:</p>
     <nav class="az-nav">
         @foreach(range('A','Z') as $letter)
-            <a href="#{{ $letter }}">{{ $letter }}</a>  
+            <a href="#{{ $letter }}">{{ $letter }}</a>
         @endforeach
     </nav>
     <?php
@@ -37,7 +37,7 @@
                         @foreach($chunk as $brand)
 
                             @php
-                                $current_first_letter = strtoupper(substr($brand->name, 0, 1)); 
+                                $current_first_letter = strtoupper(substr($brand->name, 0, 1));
                             @endphp
 
                             @if(!isset($header_first_letter) || $current_first_letter != $header_first_letter)
@@ -49,7 +49,7 @@
                             @php $header_first_letter = $current_first_letter; @endphp
 
                             <li>
-                                <a href="{{ route('brand.show', ['brand_id' => $brand->id, 'brand_slug' => $brand->getNameUrlEncodedAttribute()]) }}" alt="Manuals for '{{$brand->name}}'" title="Manuals for '{{$brand->name}}'">{{ $brand->name }}</a>
+                                <button><a href="{{ route('brand.show', ['brand_id' => $brand->id, 'brand_slug' => $brand->getNameUrlEncodedAttribute()]) }}" alt="Manuals for '{{$brand->name}}'" title="Manuals for '{{$brand->name}}'">{{ $brand->name }}</a></button>
                             </li>
                         @endforeach
                     </ul>

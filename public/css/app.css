@@ -553,12 +553,12 @@ pre code {
 .container button{
     padding:5px;
     border-radius: 5px;
-    background-color: #b2b2b2;
+    background-color: #e9ecef;
     transition-duration: 0.4s;
     transition-delay: 0.1s;
 }
 .container button:hover{
-    background-color: rgb(255, 255, 255);
+    background-color: #bdc0c3;
 }
 @media (min-width: 576px) {
     .container-sm, .container {
