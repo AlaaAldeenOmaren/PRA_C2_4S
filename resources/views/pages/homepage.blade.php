@@ -9,6 +9,16 @@
         <p><span class="me4">{{ __('introduction_texts.homepage_line_3') }}</span></p>
     </x-slot:introduction_text>
 
+        <h2>10 populairste handleidingen</h2>
+
+    <ul>
+    @foreach($handleidingen as $manual)
+    <li>
+    {{ $manual->brand_name }}: {{ $manual->manual_name }}
+    </li>
+    @endforeach
+    </ul>
+
 
     <h1>
         <x-slot:title>
