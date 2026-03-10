@@ -23,10 +23,12 @@
             <div class="col-md-4 mb-3">
                 <h5 class="mb-2">Volg ons</h5>
                 <div class="d-flex gap-2">
-                    <a href="#" class="text-light">Facebook</a>
-                    <a href="#" class="text-light">Twitter</a>
-                    <a href="#" class="text-light">Instagram</a>
-                    <a href="#" class="text-light">LinkedIn</a>
+                    <ul>
+                    <li> <a href="#" class="text-light">Facebook</a></li>
+                    <li><a href="#" class="text-light">Twitter</a></li>
+                    <li><a href="#" class="text-light">Instagram</a></li>
+                    <li><a href="#" class="text-light">LinkedIn</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
