@@ -26,6 +26,7 @@ Productcat:		/category/12/Computers/
 */
 
 use App\Models\Brand;
+use App\Models\Manual;
 use App\Http\Controllers\RedirectController;
 use App\Http\Controllers\BrandController;
 use App\Http\Controllers\TypeController;
@@ -33,20 +34,30 @@ use App\Http\Controllers\ManualController;
 use App\Http\Controllers\ProductCategoryController;
 use App\Http\Controllers\SitemapController;
 use App\Http\Controllers\LocaleController;
-
 use App\Http\Controllers\ContactController;
+
 
 
 
 // Homepage
 Route::get('/', function () {
+
     $brands = Brand::all()->sortBy('name');
+
+    // Top 10 populairste handleidingen
+    $handleidingen = \DB::table('manuals')
+    ->join('brands', 'manuals.brand_id', '=', 'brands.id')
+    ->select('brands.name as brand_name', 'manuals.name as manual_name', 'manuals.visited')
+    ->orderBy('manuals.visited', 'desc')
+    ->limit(10)
+    ->get();
 
     $name = 'Alaa Aldeen';
     $age = 20;
     $array = ['een', 'twee', 'drie'];
 
-    return view('pages.homepage', compact('brands', 'name', 'age', 'array'));
+    return view('pages.homepage', compact('brands', 'handleidingen', 'name', 'age', 'array'));
+
 })->name('home');
 
 
