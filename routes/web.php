@@ -35,32 +35,13 @@ use App\Http\Controllers\ProductCategoryController;
 use App\Http\Controllers\SitemapController;
 use App\Http\Controllers\LocaleController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\HomeController;
 
 
 
 
 // Homepage
-Route::get('/', function () {
-
-    $brands = Brand::all()->sortBy('name');
-
-    // Top 10 populairste handleidingen
-    $handleidingen = \DB::table('manuals')
-    ->join('brands', 'manuals.brand_id', '=', 'brands.id')
-    ->select('brands.name as brand_name', 'manuals.name as manual_name', 'manuals.visited')
-    ->orderBy('manuals.visited', 'desc')
-    ->limit(10)
-    ->get();
-
-    $name = 'Alaa Aldeen';
-    $age = 20;
-    $array = ['een', 'twee', 'drie'];
-
-    return view('pages.homepage', compact('brands', 'handleidingen', 'name', 'age', 'array'));
-
-})->name('home');
-
-
+Route::get('/', [HomeController::class, 'index'])->name('home');
 
 Route::get('/manual/{language}/{brand_slug}/', [RedirectController::class, 'brand']);
 Route::get('/manual/{language}/{brand_slug}/brand.html', [RedirectController::class, 'brand']);
