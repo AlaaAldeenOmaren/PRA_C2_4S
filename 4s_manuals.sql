@@ -191,3 +191,5 @@ SELECT brand, type
 FROM handleidingen
 ORDER BY views DESC
 LIMIT 10;
+
+
