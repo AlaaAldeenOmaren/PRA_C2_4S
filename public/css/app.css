@@ -551,9 +551,9 @@ pre code {
     margin-left: auto;
 }
 .container button{
+    margin-bottom: 10px;
     padding:5px;
     border-radius: 5px;
-    background-color: #e9ecef;
     transition-duration: 0.4s;
     transition-delay: 0.1s;
 }
