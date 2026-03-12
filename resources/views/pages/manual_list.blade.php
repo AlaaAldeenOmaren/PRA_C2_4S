@@ -12,6 +12,12 @@
 
     <p>{{ __('introduction_texts.type_list', ['brand' => $brand->name]) }}</p>
 
+    <ul>
+    @foreach($popular_manuals as $manual)
+        <li>{{ $manual->name }}</li>
+    @endforeach
+    </ul>
+
 
 
     <div class="row">
