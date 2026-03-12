@@ -1,7 +1,7 @@
 <x-layouts.app>
 
     <x-slot:introduction_text>
-        <p><img src="img/afbl_logo.png" align="right" width="100" height="100"><span class="me4">{{ __('introduction_texts.homepage_line_1') }}</span></p>
+        <p><img src="{{ asset('img/afbI_logo.png') }}" alt="logo"><span class="me4">{{ __('introduction_texts.homepage_line_1') }}</span></p>
 
         <p class="text-muted small"><span class="me4">Welkom, {{ $name }} ({{ $age }})</span></p>
 
