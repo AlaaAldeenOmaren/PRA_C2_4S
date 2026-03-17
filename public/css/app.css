@@ -498,6 +498,11 @@ mark,
     color: #6c757d;
 }
 
+
+footer.bg-dark .border-top {
+    color: #ffffff !important;
+}
+
 code {
     font-size: 87.5%;
     color: #f66d9b;
@@ -544,7 +549,7 @@ pre code {
 .container-sm {
     width: 100%;
     padding-right: 15px;
-    padding-left: 15px;
+    padding-left: 0px;
     display:flex;
     justify-content: center;
     margin-right: auto;
@@ -592,6 +597,7 @@ pre code {
     flex-wrap: wrap;
     margin-right: -15px;
     margin-bottom: 20px;
+    width: 100%;
 }
 
 .no-gutters {
@@ -1117,7 +1123,7 @@ pre code {
         color: #a6887e;
     }
     .col-md-4 a:visited{
-        color: #8e5948;
+        color: #ffffff;
     }
 
     .col-md-4 a:hover{
@@ -7639,8 +7645,7 @@ button.bg-dark:focus {
 .mb-3,
 .my-3 {
     margin-bottom: 1rem !important;
-    background-color: #343a40;
-    color: white;
+    padding-left: 200px !important;
 }
 
 .me4{
@@ -10113,4 +10118,13 @@ footer .container>.border-top{margin-top:auto;width:100%;text-align:center}
 html{scroll-behavior:smooth}
 nav.az-nav{text-align:center;margin-bottom:1rem}
 nav.az-nav a{display:inline-block;margin:0 .25rem;color:inherit;text-decoration:none}
-nav.az-nav a:hover,nav.az-nav a:focus{text-decoration:underline}
+nav.az-nav a:hover,nav.az-nav a:focus{text-decoration:underline}t
+
+.h210{
+    padding-left: 200px !important;
+}
+
+/* Popular manuals: center heading and list, remove bullets */
+.popular-manuals { text-align: center; margin-bottom: 1rem; }
+.popular-manuals ul { list-style: none; padding-left: 0; margin: 0 auto; display: inline-block; text-align: left; }
+.popular-manuals ul li { margin: 0.25rem 0; }

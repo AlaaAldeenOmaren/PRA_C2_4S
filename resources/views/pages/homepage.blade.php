@@ -9,15 +9,19 @@
         <p><span class="me4">{{ __('introduction_texts.homepage_line_3') }}</span></p>
     </x-slot:introduction_text>
 
-        <h2>10 populairste handleidingen</h2>
+    <div class="h210">
+        <h2 class="text-center">10 populairste handleidingen</h2>
+    </div>
 
-    <ul>
-    @foreach($handleidingen as $manual)
-    <li>
-    {{ $manual->brand_name }}: {{ $manual->manual_name }}
-    </li>
-    @endforeach
-    </ul>
+    <div class="popular-manuals">
+        <ul>
+        @foreach($handleidingen as $manual)
+            <li>
+                {{ $manual->brand_name }}: {{ $manual->manual_name }}
+            </li>
+        @endforeach
+        </ul>
+    </div>
 
 
     <h1>
@@ -25,12 +29,14 @@
             {{ __('misc.all_brands') }}
         </x-slot:title>
     </h1>
-    <p>Ga naar letter:</p>
-    <nav class="az-nav">
-        @foreach(range('A','Z') as $letter)
-            <a href="#{{ $letter }}">{{ $letter }}</a>
-        @endforeach
-    </nav>
+    <div class="d-flex align-items-center mb-3 az-letters">
+        <span class="az-label me-2">Ga naar letter:</span>
+        <nav class="az-nav mb-0">
+            @foreach(range('A','Z') as $letter)
+                <a href="#{{ $letter }}">{{ $letter }}</a>
+            @endforeach
+        </nav>
+    </div>
     <?php
     $size = count($brands);
     $columns = 3;
