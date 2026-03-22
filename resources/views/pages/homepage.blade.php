@@ -10,7 +10,7 @@
     </x-slot:introduction_text>
 
     <div class="h210">
-        <h2 class="text-center">10 populairste handleidingen</h2>
+        <h2 class="text-center">10 most popular manuals</h2>
     </div>
 
     <div class="popular-manuals">
@@ -30,7 +30,7 @@
         </x-slot:title>
     </h1>
     <div class="d-flex align-items-center mb-3 az-letters">
-        <span class="az-label me-2">Ga naar letter:</span>
+        <span class="az-label me-2">Browse by letter:</span>
         <nav class="az-nav mb-0">
             @foreach(range('A','Z') as $letter)
                 <a href="#{{ $letter }}">{{ $letter }}</a>
