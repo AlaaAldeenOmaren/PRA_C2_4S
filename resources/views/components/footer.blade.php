@@ -2,15 +2,15 @@
     <div class="container py-5">
         <div class="row">
             <div class="col-md-4 mb-3">
-                <h5 class="mb-2">Over ons</h5>
+                <h5 class="mb-2">About us</h5>
                 <p class="small mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque esse,
                     reprehenderit illum ad culpa nobis rerum animi earum.</p>
             </div>
             <div class="col-md-4 mb-3">
                 <h5 class="mb-2">Contact</h5>
                 <ul class="list-unstyled small mb-0">
-                    <li>Adres: Straat 123, 1000 AA Stad</li>
-                    <li>Telefoon: +31 6 12 34 56 78</li>
+                    <li>Address: Street 123, 1000 AA City</li>
+                    <li>Phone: +31 6 12 34 56 78</li>
                     <li>Email: info@example.com</li>
                     <li class="mt-2">
                         <a class="nav-link contact-btn {{ request()->routeIs('contact') ? 'active' : '' }}"
@@ -21,7 +21,7 @@
                 </ul>
             </div>
             <div class="col-md-4 mb-3">
-                <h5 class="mb-2">Volg ons</h5>
+                <h5 class="mb-2">Follow us</h5>
                 <div class="d-flex gap-2">
                     <ul>
                     <li> <a href="#" class="text-light">Facebook</a></li>
