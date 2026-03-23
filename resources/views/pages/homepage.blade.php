@@ -42,7 +42,7 @@
     </div>
 
     <div class="mt-3">
-        <p>Kies een letter hierboven om alle merken te bekijken die met die letter beginnen.</p>
+        <p>Select a letter above to view all brands that start with that letter.</p>
     </div>
 
 </x-layouts.app>
