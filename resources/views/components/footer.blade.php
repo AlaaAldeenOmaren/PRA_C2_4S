@@ -2,14 +2,14 @@
     <div class="container py-5">
         <div class="row">
             <div class="col-md-4 mb-3">
-                <h5 class="mb-2">Over ons</h5>
-                <p class="small mb-0">Wij zijn 4s manual, uw betrouwbare partner voor allerlei handleidingen die je maar nodig hebt. Van Tv's tot wasmachines</p>
+                <h5 class="mb-2">About Us</h5>
+                <p class="small mb-0">We are 4s manual, your reliable partner for all kinds of manuals you might need. From TVs to washing machines.</p>
             </div>
             <div class="col-md-4 mb-3">
                 <h5 class="mb-2">Contact</h5>
                 <ul class="list-unstyled small mb-0">
-                    <li>Adres: Street 123, 1000 AA City</li>
-                    <li>Nummer: +31 6 12 34 56 78</li>
+                    <li>Address: Street 123, 1000 AA City</li>
+                    <li>Number: +31 6 12 34 56 78</li>
                     <li>Email: info@example.com</li>
                     <li class="mt-2">
                         <a class="nav-link contact-btn {{ request()->routeIs('contact') ? 'active' : '' }}"
@@ -20,7 +20,7 @@
                 </ul>
             </div>
             <div class="col-md-4 mb-3">
-                <h5 class="mb-2">Volg ons</h5>
+                <h5 class="mb-2">Follow Us</h5>
                 <div class="d-flex gap-2">
                     <ul>
                     <li> <a href="#" class="text-light">Facebook</a></li>
