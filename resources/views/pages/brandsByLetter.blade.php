@@ -5,7 +5,7 @@
     </x-slot:title>
 
     <div class="d-flex align-items-center mb-3 az-letters">
-        <span class="az-label me-2">Browse by letter:</span>
+        <span class="az-label me-2">Browse per letter:</span>
         <nav class="az-nav mb-0">
             @foreach (range('A', 'Z') as $az)
                 <a href="{{ route('brands.letter', ['letter' => $az]) }}"

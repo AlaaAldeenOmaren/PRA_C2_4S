@@ -19,7 +19,7 @@
     </x-slot:title>
 
     <div class="h210">
-        <h2 class="text-center">10 most popular manuals</h2>
+        <h2 class="text-center">10 meest populaire manuals</h2>
     </div>
 
     <div class="popular-manuals">
@@ -33,7 +33,7 @@
     </div>
 
     <div class="d-flex align-items-center mb-3 az-letters">
-        <span class="az-label me-2">Browse by letter:</span>
+        <span class="az-label me-2">Browse per letter:</span>
         <nav class="az-nav mb-0">
             @foreach (range('A', 'Z') as $letter)
                 <a href="{{ route('brands.letter', ['letter' => $letter]) }}">{{ $letter }}</a>
