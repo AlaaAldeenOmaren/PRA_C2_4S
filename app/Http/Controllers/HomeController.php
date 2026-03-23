@@ -25,4 +25,15 @@ class HomeController extends Controller
 
         return view('pages.homepage', compact('brands', 'handleidingen', 'name', 'age', 'array'));
     }
+
+    public function letter($letter)
+    {
+        $letter = strtoupper($letter);
+
+        $brands = Brand::where('name', 'LIKE', $letter . '%')
+            ->orderBy('name')
+            ->get();
+
+        return view('pages.brandsByLetter', compact('brands', 'letter'));
+    }
 }
