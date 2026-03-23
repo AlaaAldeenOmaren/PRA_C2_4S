@@ -8,9 +8,9 @@
             <div class="col-md-4 mb-3">
                 <h5 class="mb-2">Contact</h5>
                 <ul class="list-unstyled small mb-0">
-                    <li>Address: Street 123, 1000 AA City</li>
+                    <li>Address: Street 123, 1000 AA Breda</li>
                     <li>Number: +31 6 12 34 56 78</li>
-                    <li>Email: info@example.com</li>
+                    <li>Email: info@4smanual.com</li>
                     <li class="mt-2">
                         <a class="nav-link contact-btn {{ request()->routeIs('contact') ? 'active' : '' }}"
                             href="{{ route('contact') }}">
