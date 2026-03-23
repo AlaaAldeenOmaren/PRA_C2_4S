@@ -2,7 +2,7 @@
     <div class="container py-5">
         <div class="row">
             <div class="col-md-4 mb-3">
-                <h5 class="mb-2">About us</h5>
+                <h5 class="mb-2">Over ons</h5>
                 <p class="small mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque esse,
                     reprehenderit illum ad culpa nobis rerum animi earum.</p>
             </div>
@@ -21,7 +21,7 @@
                 </ul>
             </div>
             <div class="col-md-4 mb-3">
-                <h5 class="mb-2">Follow us</h5>
+                <h5 class="mb-2">Volg ons</h5>
                 <div class="d-flex gap-2">
                     <ul>
                     <li> <a href="#" class="text-light">Facebook</a></li>
