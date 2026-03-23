@@ -42,6 +42,12 @@ use App\Http\Controllers\HomeController;
 
 // Homepage
 Route::get('/', [HomeController::class, 'index'])->name('home');
+
+// Contact page
+Route::get('/contact', [ContactController::class, 'index'])->name('contact');
+Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');
+
+
 Route::get('/{letter}', [HomeController::class, 'letter'])->name('brands.letter');
 
 Route::get('/manual/{language}/{brand_slug}/', [RedirectController::class, 'brand']);
@@ -61,6 +67,4 @@ Route::get('/{brand_id}/{brand_slug}/{manual_id}/', [ManualController::class, 's
 // Generate sitemaps
 Route::get('/generateSitemap/', [SitemapController::class, 'generate']);
 
-// Contact page
-Route::get('/contact', [ContactController::class, 'index'])->name('contact');
-Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');
+
